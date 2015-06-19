@@ -26,6 +26,7 @@ public class Runner {
 		System.out.println("Number of customers at the restaurant: "
 				+ Constants.NUMBER_OF_CUSTOMERS + "\n");
 
+		/* starting the Threads (allowing the Customers to enter the restaurant) */
 		for (int i = 1; i <= Constants.NUMBER_OF_CUSTOMERS; i++) {
 			new Customer(i, restaurant).start();
 		}

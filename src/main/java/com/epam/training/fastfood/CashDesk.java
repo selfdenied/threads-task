@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.epam.training.thread.Customer;
 
+/* CashDesk class provides services to Customers  */
 public class CashDesk {
 	/* getting the logger reference */
 	private static final Logger LOG = Logger.getLogger(CashDesk.class);
@@ -31,28 +32,32 @@ public class CashDesk {
 		this.id = id;
 	}
 
+	/* returns the amount of money obtained by the cash desk */
 	public AtomicInteger getMoneyObtained() {
 		return moneyObtained;
 	}
 
+	/* returns the number of Customers staying in a queue to the desk */
 	public AtomicInteger getNumberOfCustomers() {
 		return numberOfCustomers;
 	}
 
+	/* serving the Customer (one at a time) */
 	public void serviceCustomer(Customer customer) {
 		try {
 			lock1.lock();
-			/* accepting the customer's order */
+			/* accepting the Customer's order */
 			acceptOrder(customer);
-			/* taking money from the customer */
+			/* taking money from the Customer */
 			takeMoney(1 + new Random().nextInt(99), customer);
 			/* waiting for the order to be delivered */
 			TimeUnit.MILLISECONDS.sleep(new Random().nextInt(50));
+			/* delivering order */
 			deliverOrder(customer);
 			/* calculating the current amount of money at this desk */
-			System.out.println("Total amount of money in Desk #" + id + " is "
+			System.out.println("Total amount of money at Desk #" + id + " is "
 					+ moneyObtained + " USD");
-			/* decreasing the number of customers at this desk by one */
+			/* decreasing the number of Customers at this desk by one */
 			numberOfCustomers.getAndDecrement();
 		} catch (InterruptedException exception) {
 			LOG.error("Error. A thread was interrupted!");
@@ -62,22 +67,26 @@ public class CashDesk {
 		}
 	}
 
+	/* checks whether the current desk is free */
 	public boolean isDeskFree() {
-		boolean isDeskFree = lock2.tryLock();
-		return isDeskFree;
+		boolean isFree = lock2.tryLock();
+		return isFree;
 	}
 
+	/* accepts the Customer's order of food */
 	private void acceptOrder(Customer customer) {
 		System.out.println("Desk #" + id + ": accepting order from Customer #"
 				+ customer.getId());
 	}
 
+	/* takes money from the Customer */
 	private void takeMoney(int amount, Customer customer) {
 		System.out.println("Desk #" + id + ": taking " + amount
 				+ " USD from Customer #" + customer.getId());
 		moneyObtained.addAndGet(amount);
 	}
 
+	/* delivers the ordered food */
 	private void deliverOrder(Customer customer) {
 		System.out.println("Desk #" + id + ": delivering order to Customer #"
 				+ customer.getId());

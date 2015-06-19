@@ -8,15 +8,16 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 
 import com.epam.training.comparator.NumberClientsCashDeskComparator;
-import com.epam.training.constant.Constants;
+import static com.epam.training.constant.Constants.NUMBER_OF_DESKS;
 import com.epam.training.fastfood.CashDesk;
 import com.epam.training.fastfood.Restaurant;
 
+/* Customer class (Thread) stays in a queue to the chosen Cash desk */
 public class Customer extends Thread {
 	/* getting the logger reference */
 	private static final Logger LOG = Logger.getLogger(Customer.class);
 	private long id;
-	private Restaurant restaurant;
+	private Restaurant restaurant; // the restaurant they decided to visit
 
 	public Customer(long id, Restaurant restaurant) {
 		this.id = id;
@@ -31,51 +32,63 @@ public class Customer extends Thread {
 		this.id = id;
 	}
 
+	/* the main method invoked after calling java.lang.Thread.start() method */
 	public void run() {
 		CashDesk desk;
 
 		try {
-			/* entering the restaurant and choosing the queue randomly */
+			/* entering the restaurant */
 			TimeUnit.MILLISECONDS.sleep(new Random().nextInt(50));
-			desk = restaurant.useCashDesk(new Random()
-					.nextInt(Constants.NUMBER_OF_DESKS));
-			System.out.println("Customer #" + id + " has chosen Desk #"
-					+ desk.getId());
-			/* staying in a queue to the cash desk */
+			/* choosing a queue randomly */
+			desk = restaurant.useCashDesk(new Random().nextInt(NUMBER_OF_DESKS));
+			System.out.println("Customer #" + id + " has chosen Desk #"	+ desk.getId());
+			/* staying in a queue to the chosen cash desk */
 			stayingInQueue(desk);
 		} catch (InterruptedException exception) {
 			LOG.error("Error. A thread was interrupted!");
 		}
 	}
 
+	/* invoked by the Customer who has chosen a queue to the cash desk */
 	private void stayingInQueue(CashDesk desk) throws InterruptedException {
+		/* if desk is free, go and order some food */
 		if (desk.isDeskFree()) {
 			/* using the desk to order food */
 			desk.serviceCustomer(this);
 			/* leaving the desk with the ordered food */
-			System.out.println("Customer #" + id + ": leaving Desk #"
-					+ desk.getId());
+			System.out.println("Customer #" + id + ": leaving Desk #" + desk.getId());
 		} else {
-			int nextDeskId = properDeskId();
-			/* waiting in the queue and looking for a queue with fewer people */
+			/* waiting in the queue for some time */
 			TimeUnit.MILLISECONDS.sleep(new Random().nextInt(50));
+			/* counting people in queues and finding the one with fewer people */
+			int nextDeskId = properDeskId();
 
 			/*
-			 * moving to the queue with fewer people in case when you are in a
-			 * different queue (if a thread is already in the queue with fewer
-			 * people, he chooses to stay there)
+			 * moving to the queue with fewer people (if the Customer is already 
+			 * in the queue with minimum people, he stays there)
 			 */
 			if (desk.getId() != nextDeskId) {
+				/* moving to the desk with fewer people in the queue */
 				CashDesk nextDesk = restaurant.useCashDesk(nextDeskId - 1);
-				System.out.println("Customer #" + id + " moved to Desk #"
+				System.out.println("Customer #" + id + ": moving to Desk #"
 						+ nextDesk.getId());
+				/* decreasing the number of people in the queue that was left */
 				desk.getNumberOfCustomers().getAndDecrement();
 				desk = nextDesk;
 			}
+			/* 
+			 * the Customer repeats the procedure, i.e. occupies the desk if 
+			 * it's free or stays in the chosen queue for some time and then
+			 * looks for a queue with fewer people (some desks may be vacant at all)
+			 */
 			stayingInQueue(desk);
 		}
 	}
 
+	/* 
+	 * supplementary method that returns the position of the desk with 
+	 * a minimum Customers (Threads) trying to occupy it
+	 */
 	private int properDeskId() {
 		ArrayList<CashDesk> sortedList = new ArrayList<CashDesk>();
 		sortedList.addAll(restaurant.getDesks());
