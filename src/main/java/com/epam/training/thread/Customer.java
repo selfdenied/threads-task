@@ -41,7 +41,8 @@ public class Customer extends Thread {
 			TimeUnit.MILLISECONDS.sleep(new Random().nextInt(50));
 			/* choosing a queue randomly */
 			desk = restaurant.useCashDesk(new Random().nextInt(NUMBER_OF_DESKS));
-			System.out.println("Customer #" + id + " has chosen Desk #"	+ desk.getId());
+			System.out.println("Customer #" + id + " has chosen Desk #"
+					+ desk.getId());
 			/* staying in a queue to the chosen cash desk */
 			stayingInQueue(desk);
 		} catch (InterruptedException exception) {
@@ -53,10 +54,7 @@ public class Customer extends Thread {
 	private void stayingInQueue(CashDesk desk) throws InterruptedException {
 		/* if desk is free, go and order some food */
 		if (desk.isDeskFree()) {
-			/* using the desk to order food */
-			desk.serviceCustomer(this);
-			/* leaving the desk with the ordered food */
-			System.out.println("Customer #" + id + ": leaving Desk #" + desk.getId());
+			occupyDesk(desk);
 		} else {
 			/* waiting in the queue for some time */
 			TimeUnit.MILLISECONDS.sleep(new Random().nextInt(50));
@@ -64,35 +62,52 @@ public class Customer extends Thread {
 			int nextDeskId = properDeskId();
 
 			/*
-			 * moving to the queue with fewer people (if the Customer is already 
+			 * moving to the queue with fewer people (if the Customer is already
 			 * in the queue with minimum people, he stays there)
 			 */
-			if (desk.getId() != nextDeskId) {
-				/* moving to the desk with fewer people in the queue */
-				CashDesk nextDesk = restaurant.useCashDesk(nextDeskId - 1);
-				System.out.println("Customer #" + id + ": moving to Desk #"
-						+ nextDesk.getId());
-				/* decreasing the number of people in the queue that was left */
-				desk.getNumberOfCustomers().getAndDecrement();
-				desk = nextDesk;
-			}
-			/* 
-			 * the Customer repeats the procedure, i.e. occupies the desk if 
+			desk = moveToNextDesk(desk, nextDeskId);
+
+			/*
+			 * the Customer repeats the procedure, i.e. occupies the desk if
 			 * it's free or stays in the chosen queue for some time and then
-			 * looks for a queue with fewer people (some desks may be vacant at all)
+			 * looks for a queue with fewer people (some desks may be vacant at
+			 * all)
 			 */
 			stayingInQueue(desk);
 		}
 	}
 
-	/* 
-	 * supplementary method that returns the position of the desk with 
-	 * a minimum Customers (Threads) trying to occupy it
+	/*
+	 * supplementary method that returns the position of the desk with a minimum
+	 * Customers (Threads) trying to occupy it
 	 */
 	private int properDeskId() {
-		ArrayList<CashDesk> sortedList = new ArrayList<CashDesk>();
-		sortedList.addAll(restaurant.getDesks());
-		return Collections.min(sortedList,
+		ArrayList<CashDesk> deskList = new ArrayList<CashDesk>();
+		deskList.addAll(restaurant.getDesks());
+		return Collections.min(deskList,
 				new NumberClientsCashDeskComparator()).getId();
+	}
+
+	/* supplementary method (a Customer occupies the cash desk) */
+	private void occupyDesk(CashDesk desk) {
+		/* using the desk to order food */
+		desk.serviceCustomer(this);
+		/* leaving the desk with the ordered food */
+		System.out.println("Customer #" + id + ": leaving Desk #"
+				+ desk.getId());
+	}
+	
+	/* supplementary method (a Customer moves to the desk with fewer people) */
+	private CashDesk moveToNextDesk(CashDesk desk, int nextDeskId) {
+		if (desk.getId() != nextDeskId) {
+			/* moving to the desk with fewer people in the queue */
+			CashDesk nextDesk = restaurant.useCashDesk(nextDeskId - 1);
+			System.out.println("Customer #" + id + ": moving to Desk #"
+					+ nextDesk.getId());
+			/* decreasing the number of people in the queue that was left */
+			desk.getNumberOfCustomers().getAndDecrement();
+			desk = nextDesk;
+		}
+		return desk;
 	}
 }

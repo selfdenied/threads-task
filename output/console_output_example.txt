@@ -1,244 +1,255 @@
 Number of desks at the restaurant: 5
 Number of customers at the restaurant: 30
 
-Customer #30 has chosen Desk #5
-Desk #5: accepting order from Customer #30
-Desk #5: taking 30 USD from Customer #30
-Customer #15 has chosen Desk #4
-Desk #4: accepting order from Customer #15
-Desk #4: taking 27 USD from Customer #15
-Customer #20 has chosen Desk #1
-Desk #1: accepting order from Customer #20
-Desk #1: taking 67 USD from Customer #20
-Customer #12 has chosen Desk #1
-Customer #6 has chosen Desk #3
-Desk #3: accepting order from Customer #6
-Desk #3: taking 46 USD from Customer #6
-Desk #4: delivering order to Customer #15
-Customer #1 has chosen Desk #3
-Customer #2 has chosen Desk #3
-Customer #19 has chosen Desk #1
-Total amount of money at Desk #4 is 27 USD
-Customer #15: leaving Desk #4
-Customer #25 has chosen Desk #5
-Customer #7 has chosen Desk #1
-Customer #24 has chosen Desk #4
-Desk #4: accepting order from Customer #24
-Desk #4: taking 34 USD from Customer #24
-Customer #25: moving to Desk #2
-Desk #2: accepting order from Customer #25
-Desk #2: taking 67 USD from Customer #25
-Customer #3 has chosen Desk #3
-Desk #1: delivering order to Customer #20
-Total amount of money at Desk #1 is 67 USD
-Customer #20: leaving Desk #1
-Customer #12: moving to Desk #2
-Customer #18 has chosen Desk #5
-Customer #11 has chosen Desk #3
-Customer #5 has chosen Desk #5
-Customer #14 has chosen Desk #1
-Customer #8 has chosen Desk #1
-Desk #1: accepting order from Customer #8
-Desk #1: taking 10 USD from Customer #8
-Customer #11: moving to Desk #4
-Customer #21 has chosen Desk #5
-Customer #13 has chosen Desk #2
-Customer #18: moving to Desk #2
-Customer #17 has chosen Desk #4
-Customer #23 has chosen Desk #5
-Customer #4 has chosen Desk #5
-Customer #9 has chosen Desk #3
-Customer #16 has chosen Desk #3
-Customer #19: moving to Desk #4
-Customer #21: moving to Desk #1
-Customer #22 has chosen Desk #1
-Customer #10 has chosen Desk #4
-Customer #28 has chosen Desk #1
-Customer #14: moving to Desk #2
-Customer #27 has chosen Desk #3
-Customer #26 has chosen Desk #5
-Customer #29 has chosen Desk #2
-Desk #2: delivering order to Customer #25
-Total amount of money at Desk #2 is 67 USD
-Customer #25: leaving Desk #2
-Desk #5: delivering order to Customer #30
-Total amount of money at Desk #5 is 30 USD
-Customer #30: leaving Desk #5
-Customer #7: moving to Desk #5
-Desk #5: accepting order from Customer #7
-Desk #5: taking 52 USD from Customer #7
-Desk #3: delivering order to Customer #6
-Total amount of money at Desk #3 is 46 USD
-Customer #6: leaving Desk #3
-Desk #4: delivering order to Customer #24
-Total amount of money at Desk #4 is 61 USD
-Customer #24: leaving Desk #4
-Desk #1: delivering order to Customer #8
-Total amount of money at Desk #1 is 77 USD
-Customer #8: leaving Desk #1
-Desk #1: accepting order from Customer #28
-Desk #1: taking 95 USD from Customer #28
-Customer #16: moving to Desk #1
-Customer #2: moving to Desk #1
-Desk #1: delivering order to Customer #28
-Total amount of money at Desk #1 is 172 USD
-Customer #28: leaving Desk #1
-Customer #12: moving to Desk #1
-Desk #1: accepting order from Customer #12
-Desk #1: taking 66 USD from Customer #12
-Customer #16: moving to Desk #2
-Desk #2: accepting order from Customer #16
-Desk #2: taking 55 USD from Customer #16
-Customer #29: moving to Desk #1
-Desk #5: delivering order to Customer #7
-Total amount of money at Desk #5 is 82 USD
-Customer #7: leaving Desk #5
-Customer #17: moving to Desk #2
+Customer #9 has chosen Desk #4
+Desk #4: accepting order from Customer #9
+Desk #4: taking 9 USD from Customer #9
+Customer #30 has chosen Desk #4
+Customer #10 has chosen Desk #3
+Desk #3: accepting order from Customer #10
+Desk #3: taking 50 USD from Customer #10
+Customer #15 has chosen Desk #3
+Desk #4: delivering order to Customer #9
+Total amount of money at Desk #4 is 9 USD
+Customer #9: leaving Desk #4
+Customer #11 has chosen Desk #4
 Desk #4: accepting order from Customer #11
-Desk #4: taking 74 USD from Customer #11
-Customer #3: moving to Desk #4
-Desk #3: accepting order from Customer #1
-Desk #3: taking 70 USD from Customer #1
-Customer #5: moving to Desk #3
-Desk #5: accepting order from Customer #4
-Desk #5: taking 83 USD from Customer #4
-Customer #13: moving to Desk #5
-Customer #3: moving to Desk #2
-Customer #9: moving to Desk #4
-Customer #14: moving to Desk #3
-Customer #5: moving to Desk #2
-Desk #3: delivering order to Customer #1
-Total amount of money at Desk #3 is 116 USD
-Customer #1: leaving Desk #3
-Customer #21: moving to Desk #3
-Desk #3: accepting order from Customer #21
-Desk #3: taking 34 USD from Customer #21
-Customer #23: moving to Desk #3
-Customer #10: moving to Desk #5
-Customer #27: moving to Desk #4
-Customer #26: moving to Desk #3
-Customer #5: moving to Desk #5
-Customer #18: moving to Desk #1
-Customer #14: moving to Desk #1
-Customer #23: moving to Desk #2
-Customer #2: moving to Desk #3
-Customer #17: moving to Desk #3
-Desk #2: delivering order to Customer #16
-Total amount of money at Desk #2 is 122 USD
-Customer #16: leaving Desk #2
-Customer #5: moving to Desk #2
+Desk #4: taking 76 USD from Customer #11
+Customer #30: moving to Desk #1
+Desk #1: accepting order from Customer #30
+Desk #1: taking 76 USD from Customer #30
+Customer #14 has chosen Desk #4
+Customer #25 has chosen Desk #3
+Customer #5 has chosen Desk #2
 Desk #2: accepting order from Customer #5
-Desk #2: taking 49 USD from Customer #5
-Customer #26: moving to Desk #2
-Customer #22: moving to Desk #3
-Customer #18: moving to Desk #5
-Customer #23: moving to Desk #1
+Desk #2: taking 28 USD from Customer #5
+Customer #1 has chosen Desk #3
+Customer #6 has chosen Desk #2
+Customer #25: moving to Desk #5
+Desk #5: accepting order from Customer #25
+Desk #5: taking 85 USD from Customer #25
+Customer #21 has chosen Desk #3
 Desk #4: delivering order to Customer #11
-Total amount of money at Desk #4 is 135 USD
+Total amount of money at Desk #4 is 85 USD
 Customer #11: leaving Desk #4
-Customer #19: moving to Desk #2
-Desk #2: delivering order to Customer #5
-Total amount of money at Desk #2 is 171 USD
-Customer #5: leaving Desk #2
-Desk #2: accepting order from Customer #19
-Desk #2: taking 38 USD from Customer #19
-Desk #2: delivering order to Customer #19
-Total amount of money at Desk #2 is 209 USD
-Customer #19: leaving Desk #2
-Desk #3: delivering order to Customer #21
-Total amount of money at Desk #3 is 150 USD
-Customer #21: leaving Desk #3
+Customer #12 has chosen Desk #5
+Customer #17 has chosen Desk #4
+Desk #4: accepting order from Customer #17
+Desk #4: taking 81 USD from Customer #17
+Customer #12: moving to Desk #1
+Customer #15: moving to Desk #1
+Customer #4 has chosen Desk #3
+Customer #20 has chosen Desk #4
+Customer #15: moving to Desk #5
+Customer #28 has chosen Desk #5
+Customer #16 has chosen Desk #4
+Customer #7 has chosen Desk #4
+Customer #13 has chosen Desk #3
+Customer #28: moving to Desk #1
+Customer #1: moving to Desk #2
+Customer #24 has chosen Desk #5
+Customer #18 has chosen Desk #2
+Customer #8 has chosen Desk #3
+Customer #1: moving to Desk #1
+Customer #24: moving to Desk #2
+Customer #3 has chosen Desk #4
+Desk #3: delivering order to Customer #10
+Customer #2 has chosen Desk #5
+Total amount of money at Desk #3 is 50 USD
+Customer #29 has chosen Desk #4
+Customer #10: leaving Desk #3
+Customer #12: moving to Desk #5
+Customer #19 has chosen Desk #5
+Customer #26 has chosen Desk #5
+Customer #22 has chosen Desk #2
+Customer #21: moving to Desk #1
+Customer #27 has chosen Desk #3
+Desk #3: accepting order from Customer #27
+Desk #3: taking 9 USD from Customer #27
+Customer #14: moving to Desk #1
+Customer #15: moving to Desk #3
+Customer #23 has chosen Desk #3
+Customer #29: moving to Desk #1
+Customer #20: moving to Desk #2
+Customer #18: moving to Desk #4
+Desk #1: delivering order to Customer #30
+Desk #3: delivering order to Customer #27
+Total amount of money at Desk #3 is 59 USD
+Customer #27: leaving Desk #3
+Total amount of money at Desk #1 is 76 USD
+Customer #30: leaving Desk #1
+Customer #13: moving to Desk #1
+Desk #1: accepting order from Customer #13
+Desk #1: taking 91 USD from Customer #13
+Desk #4: delivering order to Customer #17
+Total amount of money at Desk #4 is 166 USD
+Customer #17: leaving Desk #4
+Customer #20: moving to Desk #3
+Desk #3: accepting order from Customer #20
+Desk #3: taking 76 USD from Customer #20
+Desk #5: delivering order to Customer #25
+Total amount of money at Desk #5 is 85 USD
+Customer #25: leaving Desk #5
 Customer #29: moving to Desk #2
-Desk #2: accepting order from Customer #29
-Desk #2: taking 31 USD from Customer #29
-Customer #3: moving to Desk #4
-Desk #4: accepting order from Customer #3
-Desk #4: taking 52 USD from Customer #3
+Customer #28: moving to Desk #4
+Desk #4: accepting order from Customer #28
+Desk #4: taking 97 USD from Customer #28
+Desk #2: delivering order to Customer #5
+Total amount of money at Desk #2 is 28 USD
+Customer #5: leaving Desk #2
+Customer #29: moving to Desk #1
+Customer #26: moving to Desk #2
+Desk #2: accepting order from Customer #26
+Customer #16: moving to Desk #5
+Desk #5: accepting order from Customer #16
+Desk #5: taking 55 USD from Customer #16
+Customer #29: moving to Desk #2
+Desk #2: taking 51 USD from Customer #26
+Desk #3: delivering order to Customer #20
+Total amount of money at Desk #3 is 135 USD
+Customer #20: leaving Desk #3
+Customer #3: moving to Desk #1
+Customer #4: moving to Desk #4
+Customer #3: moving to Desk #3
+Desk #3: accepting order from Customer #3
+Desk #3: taking 94 USD from Customer #3
+Customer #29: moving to Desk #1
+Customer #1: moving to Desk #2
+Customer #2: moving to Desk #1
+Desk #5: delivering order to Customer #16
+Total amount of money at Desk #5 is 140 USD
+Customer #16: leaving Desk #5
+Customer #23: moving to Desk #5
+Desk #5: accepting order from Customer #23
+Desk #5: taking 85 USD from Customer #23
+Customer #7: moving to Desk #3
+Desk #4: delivering order to Customer #28
+Total amount of money at Desk #4 is 263 USD
+Customer #28: leaving Desk #4
+Customer #15: moving to Desk #4
+Desk #4: accepting order from Customer #15
+Desk #4: taking 58 USD from Customer #15
+Customer #2: moving to Desk #3
+Customer #24: moving to Desk #4
+Customer #4: moving to Desk #5
+Customer #8: moving to Desk #4
+Desk #1: delivering order to Customer #13
+Total amount of money at Desk #1 is 167 USD
+Customer #13: leaving Desk #1
+Customer #22: moving to Desk #1
+Desk #1: accepting order from Customer #22
+Desk #1: taking 20 USD from Customer #22
+Customer #12: moving to Desk #2
+Customer #29: moving to Desk #3
+Customer #19: moving to Desk #1
+Customer #14: moving to Desk #5
+Customer #18: moving to Desk #1
+Customer #6: moving to Desk #4
+Desk #3: delivering order to Customer #3
+Total amount of money at Desk #3 is 229 USD
+Customer #3: leaving Desk #3
+Customer #4: moving to Desk #2
+Customer #4: moving to Desk #5
+Customer #7: moving to Desk #2
+Desk #4: delivering order to Customer #15
+Total amount of money at Desk #4 is 321 USD
+Customer #15: leaving Desk #4
+Desk #2: delivering order to Customer #26
+Total amount of money at Desk #2 is 79 USD
+Customer #26: leaving Desk #2
+Customer #7: moving to Desk #3
+Desk #3: accepting order from Customer #7
+Desk #3: taking 7 USD from Customer #7
+Customer #19: moving to Desk #2
+Desk #2: accepting order from Customer #19
+Desk #2: taking 17 USD from Customer #19
+Desk #5: delivering order to Customer #23
+Total amount of money at Desk #5 is 225 USD
+Customer #23: leaving Desk #5
 Customer #2: moving to Desk #2
+Customer #6: moving to Desk #3
+Customer #6: moving to Desk #4
+Desk #4: accepting order from Customer #6
+Desk #4: taking 48 USD from Customer #6
+Customer #8: moving to Desk #3
+Customer #12: moving to Desk #5
+Desk #5: accepting order from Customer #12
+Desk #5: taking 15 USD from Customer #12
+Customer #8: moving to Desk #4
+Customer #29: moving to Desk #1
+Desk #3: delivering order to Customer #7
+Total amount of money at Desk #3 is 236 USD
+Customer #7: leaving Desk #3
+Desk #1: delivering order to Customer #22
+Total amount of money at Desk #1 is 187 USD
+Customer #22: leaving Desk #1
+Customer #2: moving to Desk #3
+Desk #3: accepting order from Customer #2
+Desk #3: taking 68 USD from Customer #2
+Customer #24: moving to Desk #2
+Desk #4: delivering order to Customer #6
+Total amount of money at Desk #4 is 369 USD
+Customer #6: leaving Desk #4
+Desk #5: delivering order to Customer #12
+Total amount of money at Desk #5 is 240 USD
+Customer #12: leaving Desk #5
+Desk #3: delivering order to Customer #2
+Total amount of money at Desk #3 is 304 USD
+Customer #2: leaving Desk #3
 Customer #18: moving to Desk #3
 Desk #3: accepting order from Customer #18
-Desk #3: taking 17 USD from Customer #18
-Desk #1: delivering order to Customer #12
-Total amount of money at Desk #1 is 238 USD
-Customer #12: leaving Desk #1
-Desk #1: accepting order from Customer #23
-Desk #1: taking 3 USD from Customer #23
-Customer #26: moving to Desk #1
-Customer #10: moving to Desk #2
-Desk #5: delivering order to Customer #4
-Total amount of money at Desk #5 is 165 USD
-Customer #4: leaving Desk #5
-Desk #5: accepting order from Customer #13
-Desk #5: taking 65 USD from Customer #13
-Customer #10: moving to Desk #5
-Customer #9: moving to Desk #5
-Customer #14: moving to Desk #2
-Customer #14: moving to Desk #1
-Customer #27: moving to Desk #2
-Customer #14: moving to Desk #4
-Customer #27: moving to Desk #4
+Desk #3: taking 35 USD from Customer #18
+Customer #29: moving to Desk #4
+Desk #4: accepting order from Customer #29
+Desk #4: taking 62 USD from Customer #29
+Customer #1: moving to Desk #1
+Desk #1: accepting order from Customer #1
+Desk #1: taking 96 USD from Customer #1
+Customer #21: moving to Desk #3
+Customer #24: moving to Desk #1
+Customer #4: moving to Desk #2
+Desk #5: accepting order from Customer #14
+Desk #5: taking 22 USD from Customer #14
+Customer #24: moving to Desk #5
+Customer #4: moving to Desk #1
+Customer #21: moving to Desk #2
+Desk #2: delivering order to Customer #19
+Total amount of money at Desk #2 is 96 USD
+Customer #19: leaving Desk #2
+Desk #5: delivering order to Customer #14
+Total amount of money at Desk #5 is 262 USD
+Customer #14: leaving Desk #5
+Customer #24: moving to Desk #2
+Desk #2: accepting order from Customer #24
+Desk #2: taking 79 USD from Customer #24
+Desk #4: delivering order to Customer #29
+Total amount of money at Desk #4 is 431 USD
+Customer #29: leaving Desk #4
+Customer #21: moving to Desk #4
+Desk #4: accepting order from Customer #21
+Customer #8: moving to Desk #3
 Desk #3: delivering order to Customer #18
-Total amount of money at Desk #3 is 167 USD
+Total amount of money at Desk #3 is 339 USD
 Customer #18: leaving Desk #3
-Customer #17: moving to Desk #1
-Desk #3: accepting order from Customer #22
-Desk #3: taking 24 USD from Customer #22
-Customer #10: moving to Desk #3
-Desk #2: delivering order to Customer #29
-Total amount of money at Desk #2 is 240 USD
-Customer #29: leaving Desk #2
-Desk #2: accepting order from Customer #2
-Desk #2: taking 38 USD from Customer #2
-Customer #14: moving to Desk #2
-Desk #2: delivering order to Customer #2
-Total amount of money at Desk #2 is 278 USD
-Customer #2: leaving Desk #2
-Desk #1: delivering order to Customer #23
-Total amount of money at Desk #1 is 241 USD
-Customer #23: leaving Desk #1
-Desk #2: accepting order from Customer #14
-Desk #2: taking 15 USD from Customer #14
-Customer #17: moving to Desk #2
-Customer #9: moving to Desk #1
-Desk #1: accepting order from Customer #9
-Desk #1: taking 32 USD from Customer #9
-Desk #4: delivering order to Customer #3
-Total amount of money at Desk #4 is 187 USD
-Customer #3: leaving Desk #4
-Desk #1: delivering order to Customer #9
-Total amount of money at Desk #1 is 273 USD
-Customer #9: leaving Desk #1
-Desk #5: delivering order to Customer #13
-Total amount of money at Desk #5 is 230 USD
-Customer #13: leaving Desk #5
-Customer #26: moving to Desk #5
-Desk #5: accepting order from Customer #26
-Desk #5: taking 86 USD from Customer #26
-Customer #27: moving to Desk #1
-Desk #1: accepting order from Customer #27
-Desk #1: taking 33 USD from Customer #27
-Customer #10: moving to Desk #4
-Desk #4: accepting order from Customer #10
-Desk #4: taking 69 USD from Customer #10
-Desk #3: delivering order to Customer #22
-Desk #2: delivering order to Customer #14
-Total amount of money at Desk #2 is 293 USD
-Customer #14: leaving Desk #2
-Customer #17: moving to Desk #1
-Total amount of money at Desk #3 is 191 USD
-Customer #22: leaving Desk #3
-Desk #4: delivering order to Customer #10
-Total amount of money at Desk #4 is 256 USD
-Customer #10: leaving Desk #4
-Desk #1: delivering order to Customer #27
-Total amount of money at Desk #1 is 306 USD
-Customer #27: leaving Desk #1
-Customer #17: moving to Desk #2
-Desk #2: accepting order from Customer #17
-Desk #2: taking 28 USD from Customer #17
-Desk #5: delivering order to Customer #26
-Total amount of money at Desk #5 is 316 USD
-Customer #26: leaving Desk #5
-Desk #2: delivering order to Customer #17
-Total amount of money at Desk #2 is 321 USD
-Customer #17: leaving Desk #2
+Customer #4: moving to Desk #5
+Desk #5: accepting order from Customer #4
+Desk #5: taking 31 USD from Customer #4
+Desk #1: delivering order to Customer #1
+Total amount of money at Desk #1 is 283 USD
+Customer #1: leaving Desk #1
+Desk #4: taking 30 USD from Customer #21
+Customer #8: moving to Desk #1
+Desk #1: accepting order from Customer #8
+Desk #1: taking 83 USD from Customer #8
+Desk #1: delivering order to Customer #8
+Total amount of money at Desk #1 is 366 USD
+Customer #8: leaving Desk #1
+Desk #5: delivering order to Customer #4
+Total amount of money at Desk #5 is 293 USD
+Customer #4: leaving Desk #5
+Desk #4: delivering order to Customer #21
+Total amount of money at Desk #4 is 461 USD
+Customer #21: leaving Desk #4
+Desk #2: delivering order to Customer #24
+Total amount of money at Desk #2 is 175 USD
+Customer #24: leaving Desk #2

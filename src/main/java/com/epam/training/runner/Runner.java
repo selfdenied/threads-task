@@ -21,10 +21,8 @@ public class Runner {
 	public static void main(String[] args) {
 		LOG.info("Initializing the restaurant...");
 		Restaurant restaurant = new Restaurant(Constants.NUMBER_OF_DESKS);
-		System.out.println("Number of desks at the restaurant: "
-				+ restaurant.getNumberOFDesks());
-		System.out.println("Number of customers at the restaurant: "
-				+ Constants.NUMBER_OF_CUSTOMERS + "\n");
+		System.out.println("Number of desks at the restaurant: " + restaurant.getNumberOFDesks());
+		System.out.println("Number of customers at the restaurant: " + Constants.NUMBER_OF_CUSTOMERS + "\n");
 
 		/* starting the Threads (allowing the Customers to enter the restaurant) */
 		for (int i = 1; i <= Constants.NUMBER_OF_CUSTOMERS; i++) {
